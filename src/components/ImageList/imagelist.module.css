@@ -1,0 +1,16 @@
+.dividerLight,
+.dividerDark {
+  width: 200vh;
+  border-top: solid 2px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.2;
+}
+
+.dividerLight {
+  border-color: #fff;
+}
+
+.dividerDark {
+  border-color: #2c3e50;
+}

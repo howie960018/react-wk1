@@ -1,0 +1,92 @@
+.container{
+
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+
+}
+
+
+.dividerLight,
+.dividerDark {
+  width: 250px;
+  border-top: solid 2px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0.2;
+}
+
+.dividerLight {
+  border-color: #fff;
+}
+
+.dividerDark {
+  border-color: #2c3e50;
+}
+
+
+.header {
+  background-color: #00979c;
+  height: 120vh;
+  color: #fff;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    height: 40vh;
+    font-size: 1rem;
+  }
+}
+
+.headerAvatar {
+  width: 10rem;
+  height: 10rem;
+}
+
+.headerTitle {
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 200;
+}
+
+.headerImage {
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+.headerSlogan {
+  font-size: 1.25em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+   .headerAvatar {
+      width: 14rem;
+      height: 14rem;
+    }
+    
+    .headerTitle {
+      font-size: 3em;
+      text-transform: uppercase;
+      font-weight: 200;
+    }
+    
+    .headerSlogan {
+      font-size: 1.75em;
+      text-transform: uppercase;
+      margin: 0;
+    }
+ }
+
+ .headerCol {
+  display: flex;
+  justify-content: center;
+}
