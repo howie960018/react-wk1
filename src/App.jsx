@@ -1,16 +1,22 @@
 import 'antd/dist/reset.css'
 import './App.css'
 import Home from './pages/Home'
-function App() {
- 
+import {  QueryClient, QueryClientProvider} from '@tanstack/react-query'
+const queryClient = new QueryClient()
+
+//import { feedProducts } from './api'
+//feedProducts();
+
+export default function App() {
+
+  const queryClient = new QueryClient();
+
 
   return (
-    
-    <div className="App">
-     <Home/>
-    </div>
-    
-  )
+    <QueryClientProvider client={queryClient}>
+    <Home/>
+    </QueryClientProvider>
+  );
 }
 
-export default App
+

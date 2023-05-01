@@ -1,15 +1,17 @@
 import { Row, Col ,Layout } from "antd";
 import ImageItem from "../ImageItem";
 import styles from "./imagelist.module.css";
-
+import { LoadingOutlined } from '@ant-design/icons';
 
 const { Content } = Layout;
 
-export default function ImageList({ ImageItems }) {
+export default function ImageList({ ImageItems,isLoading }) {
+  
+
     return (
         <Layout  style={{ backgroundColor: '#FFFFFF',padding:16 }}>
             <Content>
-               
+                
                 <Row gutter={[16, 16]} justify="center" style={{ height: "100%" }}>
                     {ImageItems.map(img => (
                         <Col
